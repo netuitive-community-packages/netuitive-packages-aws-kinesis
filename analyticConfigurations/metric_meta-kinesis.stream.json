@@ -1,0 +1,38 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "METRIC_META",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Kinesis Stream",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "Kinesis Stream",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "aws.kinesis.*bytes$",
+      "properties" : {
+        "STATISTIC" : "sum",
+        "tags" : {
+          "unit" : "bytes"
+        }
+      }
+    }, {
+      "match" : "aws.kinesis.*(latency|milliseconds)$",
+      "properties" : {
+        "tags" : {
+          "unit" : "ms"
+        }
+      }
+    }, {
+      "match" : "aws.kinesis.*(records|success)$",
+      "properties" : {
+        "STATISTIC" : "sum",
+        "tags" : {
+          "unit" : "ops"
+        }
+      }
+    } ]
+  }
+}

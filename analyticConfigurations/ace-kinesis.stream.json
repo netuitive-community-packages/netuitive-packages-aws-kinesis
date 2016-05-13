@@ -1,0 +1,33 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "ACE",
+    "id" : null,
+    "packageId" : null,
+    "name" : "Kinesis Stream",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "Kinesis Stream",
+      "elementTags" : null
+    },
+    "metrics" : [ {
+      "match" : "aws.kinesis.getrecords\\.[^i].*",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "aws.kinesis.putrecords\\..*",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "aws.kinesis.incoming.*",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    } ]
+  }
+}
