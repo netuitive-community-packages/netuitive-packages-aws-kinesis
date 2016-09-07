@@ -1,8 +1,13 @@
-#netuitive.packages.aws.kinesis 1.0.3
+#netuitive.packages.aws.kinesis 1.0.5
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm).
 
 ##Release History
+
+###Version 1.0.5
+
+* Fixed typo in the package compatibilities.
+* Fixed version number typo.
 
 ###Version 1.0.3
 
