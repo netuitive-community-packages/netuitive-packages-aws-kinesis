@@ -18,7 +18,13 @@
         "correlation" : true
       }
     }, {
-      "match" : "aws.kinesis.putrecords\\..*",
+      "match" : "aws.kinesis.putrecords.latency",
+      "properties" : {
+        "baseline" : true,
+        "correlation" : true
+      }
+    }, {
+      "match" : "aws.kinesis.putrecords.records",
       "properties" : {
         "baseline" : true,
         "correlation" : true
