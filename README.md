@@ -1,8 +1,12 @@
-#netuitive.packages.aws.kinesis 1.0.6
+#netuitive.packages.aws.kinesis 1.0.7
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm).
 
 ##Release History
+
+###Version 1.0.7
+
+* Additional refinements to correlation settings.
 
 ###Version 1.0.6
 
