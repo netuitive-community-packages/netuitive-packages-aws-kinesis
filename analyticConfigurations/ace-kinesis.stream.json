@@ -29,12 +29,6 @@
         "baseline" : true,
         "correlation" : true
       }
-    }, {
-      "match" : "aws.kinesis.incoming.*",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
     } ]
   }
 }
