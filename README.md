@@ -1,8 +1,18 @@
-#netuitive.packages.aws.kinesis 1.0.7
+#netuitive.packages.aws.kinesis 1.1.0
 
 For detailed information on this package, please refer to the [online documentation](https://help.app.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm).
 
 ##Release History
+
+###Version 1.1.0
+
+* Added six new policies:
+ * AWS Kinesis - Depressed GetRecords Count
+ * AWS Kinesis - Depressed PutRecords Count
+ * AWS Kinesis - Elevated GetRecords Count
+ * AWS Kinesis - Elevated GetRecords Latency
+ * AWS Kinesis - Elevated PutRecords Count
+ * AWS Kinesis - Elevated PutRecords Latency
 
 ###Version 1.0.7
 

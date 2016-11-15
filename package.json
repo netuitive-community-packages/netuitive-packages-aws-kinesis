@@ -1,6 +1,6 @@
 {
   "id" : "netuitive.packages.aws.kinesis",
-  "version" : "1.0.7",
+  "version" : "1.1.0",
   "manifest" : {
     "name" : "Netuitive Packages AWS Kinesis",
     "description" : "A set of Netuitive analytics configurations, polices, dashboards, and reports that are used to monitor performance of AWS Kinesis resources.",
@@ -16,7 +16,43 @@
     "tags" : [ ],
     "checksum" : null
   },
-  "policies" : [ ],
+  "policies" : [ {
+    "data" : {
+      "file" : "policies/aws.kinesis.-.depressed.getrecords.count.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/aws.kinesis.-.depressed.putrecords.count.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/aws.kinesis.-.elevated.getrecords.count.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/aws.kinesis.-.elevated.getrecords.latency.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/aws.kinesis.-.elevated.putrecords.count.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  }, {
+    "data" : {
+      "file" : "policies/aws.kinesis.-.elevated.putrecords.latency.json",
+      "encoding" : "application/json",
+      "content" : null
+    }
+  } ],
   "analyticConfigurations" : [ {
     "data" : {
       "file" : "analyticConfigurations/ace-kinesis.stream.json",
