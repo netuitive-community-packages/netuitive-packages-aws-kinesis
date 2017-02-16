@@ -41,6 +41,18 @@
         "baseline" : true,
         "correlation" : true
       }
+    }, {
+      "match" : "netuitive.aws.kinesis.getrecords.failurepercent",
+      "properties" : {
+        "baseline" : false,
+        "correlation" : false
+      }
+    }, {
+      "match" : "netuitive.aws.kinesis.putrecords.failurepercent",
+      "properties" : {
+        "baseline" : false,
+        "correlation" : false
+      }
     } ]
   }
 }
