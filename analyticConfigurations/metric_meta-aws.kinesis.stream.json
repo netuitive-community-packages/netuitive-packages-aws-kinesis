@@ -34,6 +34,22 @@
           "unit" : "ops"
         }
       }
+    }, {
+      "match" : "netuitive.aws.kinesis.getrecords.failurepercent",
+      "properties" : {
+        "tags" : {
+          "unit" : "percent"
+        },
+        "validMax" : 100
+      }
+    }, {
+      "match" : "netuitive.aws.kinesis.getrecords.failurepercent",
+      "properties" : {
+        "tags" : {
+          "unit" : "percent"
+        },
+        "validMax" : 100
+      }
     } ]
   }
 }
