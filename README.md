@@ -4,6 +4,12 @@ For detailed information on this package, please refer to the [online documentat
 
 ##Release History
 
+###Version 1.1.2
+
+* Added two new computed metrics
+ * netuitive.aws.kinesis.getrecords.failurepercent
+ * netuitive.aws.kinesis.putrecords.failurepercent
+
 ###Version 1.1.1
 
 * Additional refinements to correlation settings.
