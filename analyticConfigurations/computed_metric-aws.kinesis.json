@@ -1,0 +1,30 @@
+{
+  "analyticConfiguration" : {
+    "tenantId" : null,
+    "type" : "COMPUTED_METRIC",
+    "id" : null,
+    "packageId" : null,
+    "name" : "AWS Kinesis Stream",
+    "scope" : {
+      "elementName" : null,
+      "elementType" : "Kinesis Stream",
+      "elementTags" : null,
+      "metricMatches" : null
+    },
+    "metrics" : [ {
+      "match" : "netuitive.aws.kinesis.getrecords.failurepercent",
+      "properties" : {
+        "expression" : "(data['aws.kinesis.getrecords.records'] == null | data['aws.kinesis.getrecords.records'].actual == 0) ? 0 : ((data['aws.kinesis.getrecords.records'].actual - data['aws.kinesis.getrecords.success'].actual) / data['aws.kinesis.getrecords.records'].actual) * 100",
+        "fqn" : "netuitive.aws.kinesis.getrecords.failurepercent",
+        "name" : "GetRecords Failure Percent"
+      }
+    }, {
+      "match" : "netuitive.aws.kinesis.putrecords.failurepercent",
+      "properties" : {
+        "expression" : "(data['aws.kinesis.putrecords.records'] == null | data['aws.kinesis.putrecords.records'].actual == 0) ? 0 : ((data['aws.kinesis.putrecords.records'].actual - data['aws.kinesis.putrecords.success'].actual) / data['aws.kinesis.putrecords.records'].actual) * 100",
+        "fqn" : "netuitive.aws.kinesis.putrecords.failurepercent",
+        "name" : "PutRecords Failure Percent"
+      }
+    } ]
+  }
+}
