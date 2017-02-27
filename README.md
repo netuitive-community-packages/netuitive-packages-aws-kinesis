@@ -1,8 +1,12 @@
-#netuitive.packages.aws.kinesis 1.1.1
+#netuitive.packages.aws.kinesis 1.2.0
 
 For detailed information on this package, please refer to the [online documentation](https://help.netuitive.com/Content/Integrations/aws.htm).
 
 ##Release History
+
+###Version 1.2.0
+
+* Updated dashboard layouts for gridstack
 
 ###Version 1.1.1
 
@@ -10,7 +14,7 @@ For detailed information on this package, please refer to the [online documentat
 
 ###Version 1.1.0
 
-* Added six new policies:
+ * Added six new policies:
  * AWS Kinesis - Depressed GetRecords Count
  * AWS Kinesis - Depressed PutRecords Count
  * AWS Kinesis - Elevated GetRecords Count
