@@ -1,46 +1,46 @@
 {
-  "analyticConfiguration" : {
-    "tenantId" : null,
-    "type" : "ACE",
-    "id" : null,
-    "packageId" : null,
-    "name" : "Kinesis Stream",
-    "scope" : {
-      "elementName" : null,
-      "elementType" : "Kinesis Stream",
-      "elementTags" : null,
-      "metricMatches" : null
+  "analyticConfiguration": {
+    "metrics": [
+      {
+        "match": "aws.kinesis.getrecords.latency",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "aws.kinesis.getrecords.records",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "aws.kinesis.getrecords.success",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "aws.kinesis.putrecords.latency",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      },
+      {
+        "match": "aws.kinesis.putrecords.records",
+        "properties": {
+          "baseline": true,
+          "correlation": true
+        }
+      }
+    ],
+    "name": "Kinesis Stream",
+    "scope": {
+      "elementType": "Kinesis Stream"
     },
-    "metrics" : [ {
-      "match" : "aws.kinesis.getrecords.latency",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "aws.kinesis.getrecords.records",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "aws.kinesis.getrecords.success",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "aws.kinesis.putrecords.latency",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    }, {
-      "match" : "aws.kinesis.putrecords.records",
-      "properties" : {
-        "baseline" : true,
-        "correlation" : true
-      }
-    } ]
+    "type": "ACE"
   }
 }

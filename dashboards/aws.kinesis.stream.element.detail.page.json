@@ -1,169 +1,112 @@
 {
-  "dashboard" : {
-    "name" : "AWS Kinesis Stream Element Detail Page",
-    "description" : null,
-    "layout" : null,
-    "properties" : {
-      "integrationType" : null,
-      "timeRangeDuration" : "3600",
-      "gridstackContents" : "[{\"id\":\"cf8ac27e-d70a-4196-b1a2-8f1d4a4620bb\",\"x\":4,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"904d4ca7-c434-4923-b59c-cd557c660d24\",\"x\":6,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"2479d8ee-6a05-495e-8e8d-feca9900fafc\",\"x\":0,\"y\":18,\"width\":12,\"height\":9},{\"id\":\"cbbff06a-ed04-4293-96de-a9406f3db802\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"9b5ee31b-897f-4762-a50b-2a12b11507b2\",\"x\":0,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"7abee38e-3f45-4ee4-b74b-7bcd9c0049e0\",\"x\":8,\"y\":0,\"width\":4,\"height\":9}]",
-      "refreshIntervalSeconds" : "300",
-      "wrap" : "true"
+  "dashboard": {
+    "name": "AWS Kinesis Stream Element Detail Page",
+    "private": false,
+    "properties": {
+      "gridstackContents": "[{\"id\":\"cf8ac27e-d70a-4196-b1a2-8f1d4a4620bb\",\"x\":4,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"904d4ca7-c434-4923-b59c-cd557c660d24\",\"x\":6,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"2479d8ee-6a05-495e-8e8d-feca9900fafc\",\"x\":0,\"y\":18,\"width\":12,\"height\":9},{\"id\":\"cbbff06a-ed04-4293-96de-a9406f3db802\",\"x\":0,\"y\":0,\"width\":4,\"height\":9},{\"id\":\"9b5ee31b-897f-4762-a50b-2a12b11507b2\",\"x\":0,\"y\":9,\"width\":6,\"height\":9},{\"id\":\"7abee38e-3f45-4ee4-b74b-7bcd9c0049e0\",\"x\":8,\"y\":0,\"width\":4,\"height\":9}]",
+      "refreshIntervalSeconds": "300",
+      "timeRangeDuration": "3600",
+      "wrap": "true"
     },
-    "widgets" : [ {
-      "id" : "cf8ac27e-d70a-4196-b1a2-8f1d4a4620bb",
-      "name" : "Successful Puts",
-      "description" : null,
-      "widgetType" : "metric-status",
-      "properties" : {
-        "visualization" : "gauge",
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "aws.kinesis.putrecord.success",
-        "metricScopeTags" : "[]",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
+    "type": "KINESIS STREAM",
+    "widgets": [
+      {
+        "id": "cf8ac27e-d70a-4196-b1a2-8f1d4a4620bb",
+        "name": "Successful Puts",
+        "properties": {
+          "metricLimit": "10",
+          "metric_fqn": "aws.kinesis.putrecord.success",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true",
+          "visualization": "gauge",
+          "width": "auto"
+        },
+        "widgetType": "metric-status"
+      },
+      {
+        "id": "904d4ca7-c434-4923-b59c-cd557c660d24",
+        "name": "Tags",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-tags"
+      },
+      {
+        "id": "2479d8ee-6a05-495e-8e8d-feca9900fafc",
+        "name": "Events",
+        "properties": {
+          "elementScopeTypes": "[\"Kinesis Stream\"]",
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "event-ticker"
+      },
+      {
+        "id": "cbbff06a-ed04-4293-96de-a9406f3db802",
+        "name": "Successful Gets",
+        "properties": {
+          "metricLimit": "10",
+          "metric_fqn": "aws.kinesis.getrecords.success",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true",
+          "visualization": "gauge",
+          "width": "auto"
+        },
+        "widgetType": "metric-status"
+      },
+      {
+        "id": "9b5ee31b-897f-4762-a50b-2a12b11507b2",
+        "name": "Attributes",
+        "properties": {
+          "metricLimit": "10",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "true",
+          "width": "auto"
+        },
+        "widgetType": "element-attributes"
+      },
+      {
+        "id": "7abee38e-3f45-4ee4-b74b-7bcd9c0049e0",
+        "name": "Latency",
+        "properties": {
+          "elementScopeTypes": "[\"Kinesis Stream\"]",
+          "metricLimit": "10",
+          "metrics": "[{\"fqn\":\"aws.kinesis.getrecords.latency\",\"aggFns\":[\"avg\"]},{\"fqn\":\"aws.kinesis.putrecord.latency\",\"aggFns\":[\"avg\"]}]",
+          "selectedTab": "table",
+          "showElementTotal": "true",
+          "showHighest": "true",
+          "useAllElementScopeTags": "true",
+          "useAllMetricScopeTags": "true",
+          "useElementNameContains": "false",
+          "width": "auto"
+        },
+        "widgetType": "multi-metric-time-series"
       }
-    }, {
-      "id" : "904d4ca7-c434-4923-b59c-cd557c660d24",
-      "name" : "Tags",
-      "description" : null,
-      "widgetType" : "element-tags",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metricScopeTags" : "[]",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "2479d8ee-6a05-495e-8e8d-feca9900fafc",
-      "name" : "Events",
-      "description" : null,
-      "widgetType" : "event-ticker",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "elementScopeTypes" : "[\"Kinesis Stream\"]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metricScopeTags" : "[]",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "cbbff06a-ed04-4293-96de-a9406f3db802",
-      "name" : "Successful Gets",
-      "description" : null,
-      "widgetType" : "metric-status",
-      "properties" : {
-        "visualization" : "gauge",
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metric_fqn" : "aws.kinesis.getrecords.success",
-        "metricScopeTags" : "[]",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "9b5ee31b-897f-4762-a50b-2a12b11507b2",
-      "name" : "Attributes",
-      "description" : null,
-      "widgetType" : "element-attributes",
-      "properties" : {
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "true",
-        "useAllElementScopeTags" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "showHighest" : "true",
-        "metricScopeTags" : "[]",
-        "width" : "auto",
-        "metrics" : "[]",
-        "selectedTab" : "table"
-      }
-    }, {
-      "id" : "7abee38e-3f45-4ee4-b74b-7bcd9c0049e0",
-      "name" : "Latency",
-      "description" : null,
-      "widgetType" : "multi-metric-time-series",
-      "properties" : {
-        "visualization" : null,
-        "showElementTotal" : "true",
-        "selectedAttributes" : "[]",
-        "elementScopeTags" : "[]",
-        "useElementNameContains" : "false",
-        "useAllElementScopeTags" : "true",
-        "element_id" : null,
-        "elementScopeTypes" : "[\"Kinesis Stream\"]",
-        "metricLimit" : "10",
-        "useAllMetricScopeTags" : "true",
-        "metricUnit" : null,
-        "metricAggs" : "[]",
-        "elementScopeIds" : "[]",
-        "elementScopeAttributes" : "[]",
-        "groupName" : null,
-        "elementNameContains" : "",
-        "showHighest" : "true",
-        "metric_fqn" : null,
-        "metricScopeTags" : "[]",
-        "width" : "auto",
-        "metrics" : "[{\"fqn\":\"aws.kinesis.getrecords.latency\",\"aggFns\":[\"avg\"]},{\"fqn\":\"aws.kinesis.putrecord.latency\",\"aggFns\":[\"avg\"]}]",
-        "selectedTab" : "table"
-      }
-    } ],
-    "type" : "KINESIS STREAM",
-    "private" : false
+    ]
   }
 }
