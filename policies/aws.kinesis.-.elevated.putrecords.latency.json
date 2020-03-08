@@ -24,7 +24,9 @@
     "enabled": true,
     "name": "AWS Kinesis - Elevated PutRecords Latency",
     "scope": {
-      "elementType": "Kinesis Stream"
+      "elementTypes": [
+        "Kinesis Stream"
+      ]
     }
   }
 }
