@@ -24,7 +24,9 @@
     "enabled": true,
     "name": "AWS Kinesis - Elevated GetRecords Latency",
     "scope": {
-      "elementType": "Kinesis Stream"
+      "elementTypes": [
+        "Kinesis Stream"
+      ]
     }
   }
 }

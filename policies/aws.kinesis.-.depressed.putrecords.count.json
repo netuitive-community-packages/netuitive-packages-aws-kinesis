@@ -24,7 +24,9 @@
     "enabled": true,
     "name": "AWS Kinesis - Depressed PutRecords Count",
     "scope": {
-      "elementType": "Kinesis Stream"
+      "elementTypes": [
+        "Kinesis Stream"
+      ]
     }
   }
 }
