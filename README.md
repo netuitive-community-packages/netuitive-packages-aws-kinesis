@@ -1,3 +1,3 @@
-# CloudWisdom.packages.aws.kinesis
+# netuitive.packages.aws.kinesis
 
 For detailed information on this package, please refer to the [online documentation](https://docs.virtana.com/en/aws.html).
